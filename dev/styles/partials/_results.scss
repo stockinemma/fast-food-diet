@@ -1,0 +1,48 @@
+//////////////////////////////////////////////////////////// R E S U L T S  RESULTS RESULTS
+main{
+	display:flex;
+	.itemsList{
+		width: 31.3%;
+		background-color: $primaryColorLight;
+	}
+	.itemInfoCard{
+		width: 31.3%;
+		background-color: $primaryColorDark;
+		h4{
+			margin: 10px 0;
+		}
+	}
+	.myDiet{
+		text-align: center;
+		width: 31.3%;
+		background-color: $highlightColor;
+		color: $lightColor;
+		.myDietTotalCount{
+			background-color: $lightColor;
+			color:$darkColor;
+			display: block;
+			width: 70%;
+			margin: 0 auto;
+			padding: 8px 15px;
+			-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+			-moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+			box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		button{
+			margin: 5px;
+		}
+	}
+}
+
+.itemsList__food{
+	cursor:pointer;
+	border: 1px solid black;
+	background-color: none;
+	&:hover{
+		background-color: white;
+	}
+	p{
+		padding: 5px;
+		margin: 0;
+	}
+}

@@ -1,0 +1,60 @@
+///////////////////////////////////////////////////////////// U S E R P A G E USERPAGE USERPAGE
+.userPage, .resourcesPage{
+	display:flex;
+	h1{
+		background-color: $lightColor;
+		margin: -10px;
+		margin-bottom: 10px;
+	}
+}
+
+.mealsContent, .resourcesContent{
+	width: 94%;
+	padding: 10px;
+	text-align: center;
+}
+
+.userMeals{
+	width: 100%;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.eachMeal{
+	width: 33.3%;
+	h2{
+		margin: 0;
+	}
+	button{
+		margin: 10px;
+	}
+}
+
+.userMealsItem{
+	text-align: center;
+	background-color: white;
+	margin: 0 20px 10px 20px;
+	padding: 10px;			
+	color: $darkColor;
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	button{
+		margin-top: 5px;
+	}
+	h1,h2,h3,h4,h5,p{
+		padding: 0;
+		margin: 0;
+	}
+}
+
+//////////////////////////////////////////////////////////// R E S O U R C E S  RESOURCES
+
+.resources{
+	margin: 40px;
+	min-height: 50vh;
+}
+
+.displayNone{
+	display:none;
+}

@@ -1,0 +1,41 @@
+//////////////////////////////////////////////////////////// S I D E B A R SIDEBAR SIDEBAR
+
+.sideBar{
+	text-align: center;
+	width: 6%;
+	background-color: $darkColor;
+	color: $primaryColorDark;
+	padding: 10px;
+	i{
+		color: $primaryColorDark;
+		text-decoration: none;
+		font-size: 20px;
+		margin-bottom: 20px;
+		&:hover{
+			color: $lightColor;
+		}
+	}
+	div{
+		width: 400px;
+		color: $primaryColorLight;
+		transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg); 
+		-webkit-transform: rotate(-90deg);
+		letter-spacing: 1px;
+		margin-top: -10px;
+		margin-left: -170px;
+		@media (max-width: 1330px){
+			margin-left: -184px;
+		}
+		@media (max-width: 1280px){
+			margin-left: -180px;
+		}
+		a{
+			color: $primaryColorDark;
+			text-decoration: none;
+			&:hover{
+				color: $lightColor;
+			}
+		}
+	}
+}

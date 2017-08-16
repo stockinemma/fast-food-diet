@@ -1,0 +1,114 @@
+//////////////////////////////////////////////////////////// G L O B A L GLOBAL GLOBAL
+a:hover, i:hover, button:hover, p:hover{
+	transition: all 0.5s ease;
+}
+
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+h1{
+	padding: 10px 15px;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+h2{
+	margin-bottom: 10px;
+}
+
+p{
+	margin: 8px 0;
+}
+
+a{
+	color: $lightColor;
+	text-decoration: none;
+	&:hover{
+		color: #primaryColorLight;
+	}
+}
+
+a.toolTip:hover{
+	position: relative;
+}
+a.toolTip:hover:after {
+	content: attr(name);
+	padding: 4px 8px;
+	color: $darkColor;
+	position: absolute;
+	background-color: $primaryColorLight;
+	left: 0;
+	top: 30px;
+	white-space: nowrap;
+	z-index: 20;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.5);
+}
+
+body{
+	background-color: $mediumColor;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color:$darkColor;
+	overflow-y: scroll;
+}
+
+.container{
+	width: 70%;
+	margin: 5vh auto;
+	background-color: $mediumColor;
+	-webkit-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.5);
+}
+
+section{
+	display:flex;
+}
+
+.box > div{
+	padding: 20px;
+}
+
+button {
+	background-color: $highlightColor;
+	color: $lightColor;
+	padding: 5px 10px;
+	border: 1px solid $darkColor;
+	text-transform: capitalize;
+}
+
+button:hover {
+	background-color: $lightColor;
+	color: $darkColor;
+}
+
+input{
+	outline-color: $highlightColor;
+}
+
+.mask {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.6);
+	height: 100%;
+}
+
+.errorMessage{
+	color: $highlightColor;
+	margin-bottom:0;
+}
+
+.centerDescription{
+	text-align: center;
+	padding: 0 10px;
+	margin-bottom: 0;
+}

@@ -1,0 +1,29 @@
+//////////////////////////////////////////////////////////// F O O T E R FOOTER FOOTER
+
+footer{
+	display:none;
+	background-color: $darkColor;
+	padding: 10px 0;
+	text-align: center;
+	color: $primaryColorLight;
+	p{
+		display:inline;
+		.fa{
+			padding: 0 10px;
+			color: $primaryColorDark;
+			text-decoration: none;
+			font-size: 20px;
+			margin-bottom: 10px;
+			&:hover{
+				color: $lightColor;
+			}
+		}
+	}
+	a{
+		color: $primaryColorDark;
+		text-decoration: none;
+		&:hover{
+			color: $lightColor;
+		}
+	}
+}

@@ -1,0 +1,657 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  box-sizing: border-box; }
+
+a:hover, i:hover, button:hover, p:hover {
+  transition: all 0.5s ease; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+h1 {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 22px; }
+
+h2 {
+  margin-bottom: 10px; }
+
+p {
+  margin: 8px 0; }
+
+a {
+  color: #F2F2F2;
+  text-decoration: none; }
+  a:hover {
+    color: #primaryColorLight; }
+
+a.toolTip:hover {
+  position: relative; }
+
+a.toolTip:hover:after {
+  content: attr(name);
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  background-color: #f5cf8a;
+  left: 0;
+  top: 30px;
+  white-space: nowrap;
+  z-index: 20;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.5); }
+
+body {
+  background-color: #999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #333;
+  overflow-y: scroll; }
+
+.container {
+  width: 70%;
+  margin: 5vh auto;
+  background-color: #999;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.5); }
+
+section {
+  display: -ms-flexbox;
+  display: flex; }
+
+.box > div {
+  padding: 20px; }
+
+button {
+  background-color: #e23d4a;
+  color: #F2F2F2;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  text-transform: capitalize; }
+
+button:hover {
+  background-color: #F2F2F2;
+  color: #333; }
+
+input {
+  outline-color: #e23d4a; }
+
+.mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%; }
+
+.errorMessage {
+  color: #e23d4a;
+  margin-bottom: 0; }
+
+.centerDescription {
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 0; }
+
+.myInfo {
+  text-align: center;
+  -ms-flex-order: 0;
+      order: 0;
+  width: 31.3%;
+  background-color: #c79685; }
+  .myInfo h1 {
+    background-color: #F2F2F2; }
+  .myInfo span {
+    font-weight: bold;
+    padding-right: 3px; }
+
+.myInfoForm div input[type="radio"] {
+  display: none; }
+
+.myInfoForm div input[type="radio"] + label {
+  background: none;
+  border: 1px solid black; }
+
+.myInfoForm div input[type="radio"]:checked + label {
+  background-color: #f5cf8a;
+  color: #333; }
+
+.myInfoForm div label {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px; }
+
+.myInfoForm div input {
+  margin: 5px 7px 5px 2px; }
+
+.myInfoForm div input[type="text"] {
+  border: 1px solid #333; }
+
+.numberInput {
+  width: 40px;
+  outline-color: #e23d4a;
+  padding: 5px;
+  border: none; }
+
+.positive {
+  color: #269328; }
+
+.negative {
+  color: red; }
+
+.myInfoTop {
+  padding-top: 20px; }
+
+.nutrientsToAdd {
+  background-color: #F2F2F2;
+  display: block;
+  margin: 0 auto;
+  width: 98%;
+  padding: 8px 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+
+input[type="text"].numberInput, textarea {
+  background-color: #F2F2F2; }
+
+#buttonOn {
+  background-color: #F2F2F2;
+  color: #333;
+  cursor: default; }
+
+main {
+  display: -ms-flexbox;
+  display: flex; }
+  main .itemsList {
+    width: 31.3%;
+    background-color: #f5cf8a; }
+  main .itemInfoCard {
+    width: 31.3%;
+    background-color: #c79685; }
+    main .itemInfoCard h4 {
+      margin: 10px 0; }
+  main .myDiet {
+    text-align: center;
+    width: 31.3%;
+    background-color: #e23d4a;
+    color: #F2F2F2; }
+    main .myDiet .myDietTotalCount {
+      background-color: #F2F2F2;
+      color: #333;
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      padding: 8px 15px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+    main .myDiet button {
+      margin: 5px; }
+
+.itemsList__food {
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: none; }
+  .itemsList__food:hover {
+    background-color: white; }
+  .itemsList__food p {
+    padding: 5px;
+    margin: 0; }
+
+.searchFormDiv {
+  width: 62.6%;
+  background-color: #F2F2F2; }
+  .searchFormDiv h1 {
+    background-color: #c79685; }
+
+.search {
+  margin-top: 25px; }
+
+.searchForm {
+  text-align: center; }
+  .searchForm input[type="radio"] {
+    display: none; }
+  .searchForm input[type="radio"] ~ label img {
+    filter: brightness(-100); }
+  .searchForm input[type="radio"] ~ label img:hover {
+    cursor: pointer;
+    filter: none; }
+  .searchForm input[type="radio"]:checked ~ label img {
+    filter: none; }
+  .searchForm label {
+    display: inline-block;
+    text-align: center; }
+    .searchForm label img {
+      width: 90%; }
+  .searchForm input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    width: 50%;
+    outline-color: #c79685;
+    border: 1px solid #333; }
+    .searchForm input[type="text"]::-webkit-input-placeholder {
+      color: #333; }
+    .searchForm input[type="text"]:-moz-placeholder {
+      color: #333; }
+    .searchForm input[type="text"]::-moz-placeholder {
+      color: #333; }
+    .searchForm input[type="text"]:-ms-input-placeholder {
+      color: #333; }
+  .searchForm input[type="text"], .searchForm textarea {
+    background-color: #f5cf8a; }
+
+.brandInputs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  margin: 0 auto; }
+
+.foodsBrand {
+  display: inline;
+  width: 16%; }
+
+.sideBar {
+  text-align: center;
+  width: 6%;
+  background-color: #333;
+  color: #c79685;
+  padding: 10px; }
+  .sideBar i {
+    color: #c79685;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px; }
+    .sideBar i:hover {
+      color: #F2F2F2; }
+  .sideBar div {
+    width: 400px;
+    color: #f5cf8a;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    letter-spacing: 1px;
+    margin-top: -10px;
+    margin-left: -170px; }
+    @media (max-width: 1330px) {
+      .sideBar div {
+        margin-left: -184px; } }
+    @media (max-width: 1280px) {
+      .sideBar div {
+        margin-left: -180px; } }
+    .sideBar div a {
+      color: #c79685;
+      text-decoration: none; }
+      .sideBar div a:hover {
+        color: #F2F2F2; }
+
+header {
+  display: -ms-flexbox;
+  display: flex; }
+
+.logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 68.6%;
+  background-color: #f5cf8a; }
+  .logo img {
+    width: 50px;
+    margin: 10px 20px; }
+  .logo h3 {
+    color: #A47A6C; }
+
+.mainNav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 31.3%;
+  background-color: #e23d4a; }
+
+nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px; }
+
+nav .fa {
+  color: #f5cf8a;
+  text-decoration: none;
+  margin: 5px 10px;
+  font-size: 20px; }
+  nav .fa:hover {
+    color: #F2F2F2; }
+
+.loginOptions {
+  text-align: right; }
+  .loginOptions input {
+    margin: 2px 0; }
+  .loginOptions button {
+    margin: 3px 10px;
+    outline: none; }
+
+.buttonDisplayNone {
+  display: none; }
+
+.displayBlock {
+  display: block; }
+
+.loginForms {
+  text-align: left;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  border: 1px solid #333;
+  transform: translate(-50%, -50%);
+  background-color: #f5cf8a;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+  .loginForms h3 {
+    margin-bottom: 5px; }
+  .loginForms button {
+    margin: 10px 0; }
+  .loginForms label {
+    display: block; }
+
+.loginCloseDiv {
+  text-align: right;
+  margin: 0; }
+
+.loginClose {
+  padding: 1px 6px; }
+
+.myDietClearAll, .myDietAddAll {
+  margin-bottom: 10px; }
+
+.myDietItem {
+  text-align: center;
+  background-color: white;
+  margin: 0 20px 10px 20px;
+  padding: 10px;
+  color: #333;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+  .myDietItem button {
+    margin-top: 5px; }
+  .myDietItem h1, .myDietItem h2, .myDietItem h3, .myDietItem h4, .myDietItem h5, .myDietItem p {
+    padding: 0;
+    margin: 0; }
+
+.userPage, .resourcesPage {
+  display: -ms-flexbox;
+  display: flex; }
+  .userPage h1, .resourcesPage h1 {
+    background-color: #F2F2F2;
+    margin: -10px;
+    margin-bottom: 10px; }
+
+.mealsContent, .resourcesContent {
+  width: 94%;
+  padding: 10px;
+  text-align: center; }
+
+.userMeals {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.eachMeal {
+  width: 33.3%; }
+  .eachMeal h2 {
+    margin: 0; }
+  .eachMeal button {
+    margin: 10px; }
+
+.userMealsItem {
+  text-align: center;
+  background-color: white;
+  margin: 0 20px 10px 20px;
+  padding: 10px;
+  color: #333;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+  .userMealsItem button {
+    margin-top: 5px; }
+  .userMealsItem h1, .userMealsItem h2, .userMealsItem h3, .userMealsItem h4, .userMealsItem h5, .userMealsItem p {
+    padding: 0;
+    margin: 0; }
+
+.resources {
+  margin: 40px;
+  min-height: 50vh; }
+
+.displayNone {
+  display: none; }
+
+footer {
+  display: none;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+  color: #f5cf8a; }
+  footer p {
+    display: inline; }
+    footer p .fa {
+      padding: 0 10px;
+      color: #c79685;
+      text-decoration: none;
+      font-size: 20px;
+      margin-bottom: 10px; }
+      footer p .fa:hover {
+        color: #F2F2F2; }
+  footer a {
+    color: #c79685;
+    text-decoration: none; }
+    footer a:hover {
+      color: #F2F2F2; }
+
+@media (max-width: 1280px) {
+  .container {
+    width: 80%; } }
+
+@media (max-width: 1050px) {
+  section {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .myInfo {
+    width: 100%;
+    -ms-flex-order: 0;
+        order: 0;
+    padding-bottom: 20px; }
+  .searchFormDiv, .resourcesContent, .mealsContent {
+    width: 100%; }
+  .searchFormDiv h1 {
+    background-color: #f5cf8a;
+    text-align: center; }
+  .sideBar {
+    display: none; }
+  .itemList, .itemInfoCard, .myDiet {
+    width: 33.3%; }
+  main .itemsList {
+    width: 33.3%; }
+  main .itemInfoCard {
+    width: 33.3%; }
+  main .myDiet {
+    width: 33.3%; }
+  .nutrientsToAdd {
+    width: 50%; }
+  footer {
+    display: block; } }
+
+@media (max-width: 990px) {
+  .container {
+    width: 90%; }
+  header {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  div.logo {
+    width: 100%; }
+    div.logo img {
+      width: 30px;
+      margin: 10px; }
+  .mainNav {
+    width: 100%; }
+  .eachMeal {
+    width: 50%; } }
+
+@media (max-width: 660px) {
+  .container {
+    width: 95%; }
+  main {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    main .itemsList {
+      width: 100%; }
+    main .itemInfoCard {
+      width: 100%; }
+    main .myDiet {
+      width: 100%; }
+  .nutrientsToAdd {
+    width: 60%; }
+  .box div.itemAdd {
+    padding-top: 0; } }
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%; }
+  .foodsBrand {
+    width: 25%; }
+  .nutrientsToAdd {
+    width: 80%; }
+  .eachMeal {
+    width: 100%; } }

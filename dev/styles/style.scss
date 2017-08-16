@@ -1,0 +1,129 @@
+@import "partials/norm";
+@import "partials/variables";
+@import "partials/globals";
+@import "partials/myinfo.scss";
+@import "partials/results.scss";
+@import "partials/search.scss";
+@import "partials/sidebar.scss";
+@import "partials/header.scss";
+@import "partials/mydiet.scss";
+@import "partials/userpage.scss";
+@import "partials/footer.scss";
+
+
+//////////////////////////////////////////////////////////// M E D I A Q U E R I E S mediaqueriesss
+
+@media (max-width: 1280px) {
+	.container{
+		width: 80%;
+	}
+}
+
+@media (max-width: 1050px) {
+	section{
+		flex-direction: column
+	}
+	.myInfo{
+		width: 100%;
+		order: 0;
+		padding-bottom: 20px;
+	}
+	.searchFormDiv, .resourcesContent, .mealsContent{
+		width: 100%;
+	}
+	.searchFormDiv{
+		h1{
+			background-color: $primaryColorLight;
+			text-align: center;
+		}
+	}
+	.sideBar{
+		display:none;
+	}
+	.itemList, .itemInfoCard, .myDiet{
+		width: 33.3%;
+	}
+	main{
+		.itemsList{
+			width: 33.3%;
+		}
+		.itemInfoCard{
+			width: 33.3%;
+		}
+		.myDiet{
+			width: 33.3%;
+		}
+	}
+	.nutrientsToAdd{
+		width: 50%;
+	}
+	footer{
+		display:block;
+	}
+}
+
+@media (max-width: 990px) {
+	.container{
+		width: 90%;
+	}
+	header{
+		flex-direction: column;
+	}
+	div.logo{
+		// text-align: center;
+		width: 100%;
+		a{
+			// width: 100%;
+		}
+		img{
+			width: 30px;
+			margin: 10px;
+		}
+	}
+	.mainNav{
+		width: 100%;
+	}
+
+	.eachMeal{
+		width: 50%;
+	}
+}
+
+@media (max-width: 660px) {
+	.container{
+		width: 95%;
+	}
+	main{
+		flex-direction: column;
+		.itemsList{
+			width: 100%;
+		}
+		.itemInfoCard{
+			width: 100%;
+		}
+		.myDiet{
+			width: 100%;
+		}
+	}
+	.nutrientsToAdd{
+		width: 60%;
+	}
+	.box div.itemAdd{
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.container{
+		width: 100%;
+	}
+	.foodsBrand {
+		width: 25%;
+	}
+	.nutrientsToAdd{
+		width: 80%;
+	}
+	.eachMeal{
+		width: 100%;
+	}
+}
